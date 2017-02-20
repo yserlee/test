@@ -15,7 +15,7 @@ function CWE_476() { // NULL_POINTER
 }
 
 function CWE_480() { // BAD_BITWISE_OPERATOR
-    var obj = null;
+    var obj = {};
     if (obj & obj.prop) {
         console.log(obj.prop);
     }
