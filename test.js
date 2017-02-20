@@ -46,7 +46,7 @@ function CWE_489_569_570_571() { // CONSTANT_CONDITION
 }
 
 function CWE_561() { // UNREACHABLE_CODE
-    return;
+    //return;
 
     var bar = 1;
     console.log(bar);
