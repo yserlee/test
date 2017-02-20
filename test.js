@@ -9,25 +9,25 @@ function CWE_398() { // IDENTICAL_BRANCHES
 }
 
 function CWE_476() { // NULL_POINTER
-    var obj = {};
+    var obj;
     var y = obj.x;
     console.log(y);
 }
 
 function CWE_480() { // BAD_BITWISE_OPERATOR
-    var obj = {};
-    if (obj && obj.prop) {
+    var obj = null;
+    if (obj & obj.prop) {
         console.log(obj.prop);
     }
 }
 
 function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION
     var x = -1;
-    if (x ==== -1) console.log('Error!', x);
+    if (x = -1) console.log('Error!', x);
 }
 
 function CWE_482_665() { // UNUSED_EXPR
-    //this.foo;
+    this.foo;
 }
 
 function CWE_484() { // SWITCH_CASE_FALL_THROUGH
