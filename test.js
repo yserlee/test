@@ -9,21 +9,21 @@ function CWE_398() { // IDENTICAL_BRANCHES
 }
 
 function CWE_476() { // NULL_POINTER
-    var obj = {};
+    var obj;
     var y = obj.x;
     console.log(y);
 }
 
 function CWE_480() { // BAD_BITWISE_OPERATOR
-    var obj = {};
-    if (obj && obj.prop) {
+    var obj = null;
+    if (obj & obj.prop) {
         console.log(obj.prop);
     }
 }
 
 function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION
     var x = -1;
-    if (x === -1) console.log('Error!', x);
+    if (x = -1) console.log('Error!', x);
 }
 
 function CWE_482_665() { // UNUSED_EXPR
@@ -46,7 +46,7 @@ function CWE_489_569_570_571() { // CONSTANT_CONDITION
 }
 
 function CWE_561() { // UNREACHABLE_CODE
-    //return;
+    return;
 
     var bar = 1;
     console.log(bar);
@@ -62,12 +62,12 @@ function CWE_628() { // TOO_MANY_ARGS
     function add(x, y) {
         return x + y;
     }
-    var sum = add(1, 2);
+    var sum = add(1, 2, 3);
     console.log(sum);
 }
 
 function CWE_670(x) { // STRAY_SEMICOLON
-    while (++x <= 10) 
+    while (++x <= 10) ;
     {
         sum += x;
     }
