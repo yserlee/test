@@ -23,23 +23,23 @@ function CWE_480() { // BAD_BITWISE_OPERATOR
 
 function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION
     var x = -1;
-    if (x = -1) console.log('Error!', x);
+    if (x ==== -1) console.log('Error!', x);
 }
 
 function CWE_482_665() { // UNUSED_EXPR
-    this.foo;
+    //this.foo;
 }
 
 function CWE_484() { // SWITCH_CASE_FALL_THROUGH
     var x;
     switch (x) {
-    case '1': console.log('Do one thing');
+    case '1': console.log('Do one thing'); break;
     case '2': console.log('Do another thing');
     }
 }
 
-function CWE_489_569_570_571() { // CONSTANT_CONDITION
-    var x = "foo";
+function CWE_489_569_570_571(x) { // CONSTANT_CONDITION
+    //var x = "foo";
     if (x === "bar") {
         console.log('Do something');
     }
@@ -56,6 +56,8 @@ function CWE_563(url) { // UNUSED_VAR_ASSIGN
     var foo = url + "?query=deepscan";
     foo = url.replace(/\s/gi, "");
     console.log(foo);
+    
+    return foo;
 }
 
 function CWE_628() { // TOO_MANY_ARGS
