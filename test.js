@@ -23,7 +23,7 @@ function CWE_480() { // BAD_BITWISE_OPERATOR
 
 function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION
     var x = -1;
-    if (x ==== -1) console.log('Error!', x);
+    if (x === -1) console.log('Error!', x);
 }
 
 function CWE_482_665() { // UNUSED_EXPR
