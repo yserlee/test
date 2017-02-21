@@ -14,15 +14,15 @@ function CWE_476() { // NULL_POINTER
     console.log(y);
 }
 
-function CWE_480() { // BAD_BITWISE_OPERATOR
-    var obj = {};
+function CWE_480(obj) { // BAD_BITWISE_OPERATOR
+    //var obj = {};
     if (obj && obj.prop) {
         console.log(obj.prop);
     }
 }
 
-function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION
-    var x = -1;
+function CWE_480_481(x) { // BAD_ASSIGN_IN_CONDITION
+    //var x = -1;
     if (x === -1) console.log('Error!', x);
 }
 
@@ -53,11 +53,11 @@ function CWE_561() { // UNREACHABLE_CODE
 }
 
 function CWE_563(url) { // UNUSED_VAR_ASSIGN
-    var foo = url + "?query=deepscan";
-    foo = url.replace(/\s/gi, "");
-    console.log(foo);
+//     var foo = url + "?query=deepscan";
+//     foo = url.replace(/\s/gi, "");
+//     console.log(foo);
     
-    return foo;
+//     return foo;
 }
 
 function CWE_628() { // TOO_MANY_ARGS
