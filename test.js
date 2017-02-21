@@ -46,7 +46,7 @@ function CWE_489_569_570_571() { // CONSTANT_CONDITION
 }
 
 function CWE_561() { // UNREACHABLE_CODE
-    return;
+    //return;
 
     var bar = 1;
     console.log(bar);
@@ -67,7 +67,7 @@ function CWE_628() { // TOO_MANY_ARGS
 }
 
 function CWE_670(x) { // STRAY_SEMICOLON
-    while (++x <= 10) ;
+    while (++x <= 10)
     {
         sum += x;
     }
